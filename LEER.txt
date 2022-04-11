@@ -1,0 +1,44 @@
+- Instalar nodejs
+  https://nodejs.org/download/release/v14.19.1/
+  node --version
+  
+- Ir a web de Angular
+  https://angular.io/guide/setup-local
+  
+- Instalar Angular Cli:
+  npm install -g @angular/cli
+  ng --version
+  
+- Crear repositorio en Github y clonar
+  git clone https://url-repositorio  
+  
+- Crear proyecto inicial:
+  ng new nombre-proyecto --directory=./ --style=scss
+  
+- Subir al repositorio
+  Limpias el archivo app.component.html "Hola {{ title }}"
+  git checkout -b develop
+  git push origin develop
+  git checkout -b feature/alumnos-123
+  git add .
+  git commit -m "comentario"
+  git push origin feature/alumnos-123
+  
+- Descargar los cambios del repositorio
+  git fetch
+  git checkout feature/alumnos-123
+  npm install => instala el node_modules
+  
+- Generar el component de alumnos
+  ng generate component alumnos-listado
+  
+- Ciclo de vida de los componentes:
+  Son un conjunto de eventos o funciones que Angular ejecutará en determinados 
+  momentos del componente
+  - constructor: No es parte del ciclo de vida, se ejecuta cuando se 
+                 crea la instancia del componente
+  - ngOnInit: Se ejecuta cuando Angular inserta el componente en el HTML 
+  - ngOnDestroy: Se ejecuta cuando Angular destruye o remueve el componente del HTML
+  - ngOnChanges: Se ejecuta cada vez que cambia algún INPUT del componente
+  
+  
