@@ -30,7 +30,7 @@
   npm install => instala el node_modules
   
 - Generar el component de alumnos
-  ng generate component alumnos-listado
+  npm run ng generate component alumnos-listado
   
 - Ciclo de vida de los componentes:
   Son un conjunto de eventos o funciones que Angular ejecutará en determinados 
